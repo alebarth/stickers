@@ -7,7 +7,7 @@ import java.io.InputStream;
 
 import javax.imageio.ImageIO;
 
-public class GeradoraDeFigurinhas {
+public class GeradorFigurinhas {
 
 	public void criar(InputStream inputStream, String nomeArquivo) throws Exception {
 		
@@ -26,7 +26,7 @@ public class GeradoraDeFigurinhas {
 		graficos.drawImage(imagemOriginal, 0, 0, null);
 		
 		// configurar a fonte da frase
-		var fonte = new Font(Font.SANS_SERIF, Font.BOLD, 64);
+		Font fonte = new Font(Font.SANS_SERIF, Font.BOLD, 64);
 		graficos.setColor(Color.RED);
 		graficos.setFont(fonte);
 		
